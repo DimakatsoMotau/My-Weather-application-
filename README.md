@@ -12,8 +12,8 @@ A minimalist weather application that provides current weather information inclu
 ## Usage
 
 1. Open the app.
-2. Allow location access (if prompted).
-3. View current weather conditions including date, time, temperature, weather conditions, and humidity for your location.
+2. Enter a city name in the search bar and press Enter or click the search icon.
+3. View current weather conditions including date, time, temperature, weather conditions, wind speed and humidity for your location.
 
 ## Technologies Used
 
