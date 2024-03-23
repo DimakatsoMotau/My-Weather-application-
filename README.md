@@ -1,6 +1,6 @@
 # Simple Weather App
 
-A minimalist weather application that provides current weather information including date, time, temperature, weather conditions, and humidity without a forecast. Easily check the current weather conditions for your location.
+A minimalist weather application that provides current weather information including date, time, temperature, weather conditions, and humidity without a forecast. Easily check the current weather conditions for the city you will enter on the on the search bar.
 
 ## Features
 
@@ -12,8 +12,7 @@ A minimalist weather application that provides current weather information inclu
 ## Usage
 
 1. Open the app.
-2. Enter a city name in the search bar and press Enter or click the search icon.
-3. View current weather conditions including date, time, temperature, weather conditions, wind speed and humidity for your location.
+2. Enter a city name in the search bar and press Enter or click the search icon button to fetch the weather data. The app will display the current weather conditions including date, time, temperature, wind speed and humidity for your city.
 
 ## Technologies Used
 
