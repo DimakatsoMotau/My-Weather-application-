@@ -10,66 +10,65 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="src/styles.css" />
     <title>Weather application</title>
   </head>
+  <video
+    src="video/coverr-cloudy-sky-2765-1080p.mp4"
+    autoplay
+    muted
+    loop
+    id="video-bg"
+    type="video/mp4"
+  ></video>
   <body>
-    <div class="video-background">
-      <video
-        src="video/coverr-cloudy-sky-2765-1080p.mp4"
-        autoplay
-        muted
-        loop
-        id="video-bg"
-        type="video/mp4"
-      ></video>
-      <div class="container">
-        <form class="search-form">
-          <input type="search" placeholder="Search for city..." required />
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </form>
-        <h1>eMalahleni</h1>
-        <p>Saturday, 23 March 2024 19:43</p>
-        <div class="weather-info">
-          <div class="icon"><i class="fa-solid fa-cloud-sun"></i></div>
-          <div class="temperature">18°C</div>
-          <div class="condition">Cloudly</div>
+    <div class="container">
+      <form class="search-form">
+        <input type="search" placeholder="Search for city..." required />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </form>
+      <h1>eMalahleni</h1>
+      <p>Saturday, 23 March 2024 19:43</p>
+      <div class="weather-info">
+        <div class="icon"><i class="fa-solid fa-cloud-sun"></i></div>
+        <div class="temperature">18°C</div>
+        <div class="condition">Cloudly</div>
+      </div>
+      <div class="weather-details">
+        <div class="humidity-container">
+          <i class="fa-solid fa-water"></i>
+          <span id="humidity">64%</span> humidity
         </div>
-        <div class="weather-details">
-          <div class="humidity-container">
-            <i class="fa-solid fa-water"></i>
-            <span id="humidity">64%</span> humidity
-          </div>
-          <div class="wind-speed">
-            <i class="fa-solid fa-wind"></i>
-            <span class="wind">0km/h</span> wind
-          </div>
+        <div class="wind-speed">
+          <i class="fa-solid fa-wind"></i>
+          <span class="wind">0km/h</span> wind
         </div>
-        <footer>
-          <p>
-            Coded by
-            <a
-              href="https://github.com/DimakatsoMotau"
-              target="_blank"
-              rel="noopener"
-              >Dimakatso Motau,
-            </a>
-            is
-            <a
-              href="https://github.com/DimakatsoMotau/My-Weather-application-"
-              target="_blank"
-              rel="noopener"
-              >open-sourced on Github</a
-            >
-            and
-            <a
-              href="https://quick-weather-check.netlify.app/"
-              target="_blank"
-              rel="noopener"
-              >hoosted on Netlify</a
-            >
-          </p>
-        </footer>
       </div>
     </div>
+    <footer>
+      <p>
+        This project is coded by
+        <a
+          href="https://github.com/DimakatsoMotau"
+          target="_blank"
+          rel="noopener"
+          >Dimakatso Motau,
+        </a>
+        is
+        <a
+          href="https://github.com/DimakatsoMotau/My-Weather-application-"
+          target="_blank"
+          rel="noopener"
+          >open-sourced on Github</a
+        >
+        and
+        <a
+          href="https://quick-weather-check.netlify.app/"
+          target="_blank"
+          rel="noopener"
+          >hoosted on Netlify</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
