@@ -21,13 +21,10 @@ input {
   color: #ffff;
 }
 
-h1 {
-  margin-bottom: 0;
-}
-
 h1,
 p {
   text-align: center;
+  margin-bottom: 0;
 }
 
 p {
@@ -37,7 +34,7 @@ p {
 
 footer {
   position: fixed;
-  top: 550px;
+  top: 570px;
   left: 320px;
   z-index: 1;
   color: black;
@@ -77,8 +74,14 @@ footer {
 
 .weather-icon {
   font-size: 6em;
-  padding: 5px 0 0;
+  padding: 0;
   margin-bottom: 0;
+}
+
+.weather-img {
+  width: 150px;
+  height: 150px;
+  padding-top: 0;
 }
 
 .temperature {
