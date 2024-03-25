@@ -84,4 +84,27 @@ function handleSearchSubmit(event) {
 let searchForm = document.querySelector(".search-form");
 searchForm.addEventListener("submit", handleSearchSubmit);
 
+function displayforecast() {
+  let forecast = document.querySelector("#weather-forecast");
+
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  let forecastElement = "";
+
+  days.forEach(function (day) {
+    forecastElement += ` <div class="col">
+          <div class="forecast-day">${day}</div>
+          <img
+            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+            alt="icon-image"
+          />
+          <div class="temperature-forecast">
+            <strong>18°</strong> <span>12°</span>
+          </div>
+        </div>`;
+
+    forecast.innerHTML = forecastElement;
+  });
+}
+
 searchCity("eMalahleni");
+displayforecast();
