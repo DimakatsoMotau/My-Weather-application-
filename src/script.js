@@ -22,7 +22,6 @@ function displayWeather(response) {
 function searchCity(city) {
   let apiKey = "a34b872b401de0d58o6t84c11efbc2d4";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
-  console.log(apiUrl);
 
   axios.get(apiUrl).then(displayWeather);
 }
@@ -60,6 +59,14 @@ function formateDate(date) {
   ];
 
   let month = months[date.getMonth()];
+
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
 
   return `${day}, ${dayOfMonth} ${month} ${year} ${hours}:${minutes}`;
 }

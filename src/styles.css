@@ -7,8 +7,11 @@ body {
 }
 
 input {
-  padding: 10px 30px;
-  width: 310px;
+  padding: 10px 35px;
+  display: block;
+  margin: 0 auto;
+  width: 410px;
+  height: 45px;
   border: 1px solid rgba(97, 175, 244, 0.6);
   background: rgba(97, 175, 244, 0.4);
   border-radius: 5px;
@@ -32,9 +35,13 @@ p {
   font-size: 1.2em;
 }
 
+img {
+  width: 50px;
+}
+
 footer {
   position: fixed;
-  top: 570px;
+  top: 580px;
   left: 320px;
   z-index: 1;
   color: black;
@@ -42,11 +49,11 @@ footer {
 
 .container {
   position: fixed;
-  top: 50px;
-  left: 500px;
+  top: 20px;
+  left: 450px;
   background: rgba(97, 175, 244, 0.4);
   z-index: 1;
-  padding: 20px 30px;
+  padding: 20px;
   border: 1px solid rgba(97, 175, 244, 0.6);
   border-radius: 5px;
   backdrop-filter: blur(5px);
@@ -55,7 +62,7 @@ footer {
 
 .search-icon {
   position: absolute;
-  right: 315px;
+  right: 410px;
   top: 30px;
   z-index: 2;
 }
@@ -73,7 +80,6 @@ footer {
 }
 
 .weather-icon {
-  font-size: 6em;
   padding: 0;
   margin-bottom: 0;
 }
@@ -94,9 +100,9 @@ footer {
 }
 
 .weather-details {
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .humidity-container,
@@ -106,4 +112,17 @@ footer {
 
 .icons {
   font-size: 1.4em;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+.col {
+  width: 50px;
+  text-align: center;
+  margin-right: 20px;
 }
