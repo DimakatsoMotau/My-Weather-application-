@@ -14,71 +14,72 @@
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>Weather application</title>
   </head>
-
   <body>
-    <video
-      src="video/coverr-cloudy-sky-2765-1080p.mp4"
-      autoplay
-      muted
-      loop
-      id="video-bg"
-      type="video/mp4"
-    ></video>
-    <div class="container">
-      <form class="search-form">
-        <input
-          type="search"
-          placeholder="Search for city..."
-          required
-          id="search-input"
-        />
-        <i class="fa-solid fa-magnifying-glass search-icon"></i>
-      </form>
-      <h1>eMalahleni</h1>
-      <p id="date"></p>
-      <div class="weather-info">
-        <div class="weather-icon"></div>
-        <div class="temperature"></div>
-        <div class="condition"></div>
-      </div>
-      <div class="weather-details">
-        <div class="humidity-container">
-          <i class="fa-solid fa-water icons"></i>
-          <span id="humidity"></span> humidity
+    <div class="main-container">
+      <video
+        src="video/coverr-cloudy-sky-2765-1080p.mp4"
+        autoplay
+        muted
+        loop
+        id="video-bg"
+        type="video/mp4"
+      ></video>
+      <div class="container">
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Search for city..."
+            required
+            id="search-input"
+          />
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </form>
+        <h1>eMalahleni</h1>
+        <p id="date"></p>
+        <div class="weather-info">
+          <div class="weather-icon"></div>
+          <div class="temperature"></div>
+          <div class="condition"></div>
         </div>
-        <div class="wind-speed">
-          <i class="fa-solid fa-wind icons"></i>
-          <span id="wind-speed"></span> wind
+        <div class="weather-details">
+          <div class="humidity-container">
+            <i class="fa-solid fa-water icons"></i>
+            <span id="humidity"></span> humidity
+          </div>
+          <div class="wind-speed">
+            <i class="fa-solid fa-wind icons"></i>
+            <span id="wind-speed"></span> wind
+          </div>
         </div>
+        <hr />
+        <div class="weather-forecast" id="weather-forecast"></div>
       </div>
-      <hr />
-      <div class="weather-forecast" id="weather-forecast"></div>
+      <footer>
+        <p>
+          This project is coded by
+          <a
+            href="https://github.com/DimakatsoMotau"
+            target="_blank"
+            rel="noopener"
+            >Dimakatso Motau,
+          </a>
+          is
+          <a
+            href="https://github.com/DimakatsoMotau/My-Weather-application-"
+            target="_blank"
+            rel="noopener"
+            >open-sourced on Github</a
+          >
+          and
+          <a
+            href="https://quick-weather-check.netlify.app/"
+            target="_blank"
+            rel="noopener"
+            >hoosted on Netlify</a
+          >
+        </p>
+      </footer>
     </div>
-    <footer>
-      <p>
-        This project is coded by
-        <a
-          href="https://github.com/DimakatsoMotau"
-          target="_blank"
-          rel="noopener"
-          >Dimakatso Motau,
-        </a>
-        is
-        <a
-          href="https://github.com/DimakatsoMotau/My-Weather-application-"
-          target="_blank"
-          rel="noopener"
-          >open-sourced on Github</a
-        >
-        and
-        <a
-          href="https://quick-weather-check.netlify.app/"
-          target="_blank"
-          rel="noopener"
-          >hoosted on Netlify</a
-        >
-      </p>
-    </footer>
     <script src="src/script.js"></script>
   </body>
 </html>
