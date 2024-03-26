@@ -17,6 +17,8 @@ function displayWeather(response) {
 
   let windSpeed = document.querySelector("#wind-speed");
   windSpeed.innerHTML = `${response.data.wind.speed}km/h`;
+
+  fetchForecast(response.data.city);
 }
 
 function searchCity(city) {
@@ -84,7 +86,14 @@ function handleSearchSubmit(event) {
 let searchForm = document.querySelector(".search-form");
 searchForm.addEventListener("submit", handleSearchSubmit);
 
-function displayforecast() {
+function fetchForecast(city) {
+  let apiKey = "a34b872b401de0d58o6t84c11efbc2d4";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
   let forecast = document.querySelector("#weather-forecast");
 
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
@@ -107,4 +116,3 @@ function displayforecast() {
 }
 
 searchCity("eMalahleni");
-displayforecast();
