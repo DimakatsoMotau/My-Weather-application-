@@ -48,12 +48,6 @@ footer {
   width: 100%;
 }
 
-.main-container {
-  width: 100%;
-  max-width: 600px;
-  height: 300px;
-}
-
 #video-bg {
   position: fixed;
   right: 0;
@@ -154,10 +148,14 @@ footer {
   .search-icon {
     display: none;
   }
+  .container {
+    padding-bottom: 10px;
+  }
 }
 
 @media (max-width: 390px) {
   .col {
+    margin: 0;
     overflow: hidden;
   }
 }
