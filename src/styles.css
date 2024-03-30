@@ -148,14 +148,14 @@ footer {
   .search-icon {
     display: none;
   }
-  .container {
-    padding-bottom: 10px;
-  }
 }
 
 @media (max-width: 390px) {
   .col {
     margin: 0;
     overflow: hidden;
+  }
+  .container {
+    padding-bottom: 80px;
   }
 }
